@@ -11,6 +11,9 @@ importers:
       preact:
         specifier: ^10.25.2
         version: 10.25.3
+      preact-router:
+        specifier: ^4.1.2
+        version: 4.1.2(preact@10.25.3)
     devDependencies:
       '@preact/preset-vite':
         specifier: ^2.9.3
@@ -836,6 +839,11 @@ packages:
   postcss@8.4.49:
     resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
     engines: {node: ^10 || ^12 || >=14}
+
+  preact-router@4.1.2:
+    resolution: {integrity: sha512-uICUaUFYh+XQ+6vZtQn1q+X6rSqwq+zorWOCLWPF5FAsQh3EJ+RsDQ9Ee+fjk545YWQHfUxhrBAaemfxEnMOUg==}
+    peerDependencies:
+      preact: '>=10'
 
   preact@10.25.3:
     resolution: {integrity: sha512-dzQmIFtM970z+fP9ziQ3yG4e3ULIbwZzJ734vaMVUTaKQ2+Ru1Ou/gjshOYVHCcd1rpAelC6ngjvjDXph98unQ==}
@@ -1729,6 +1737,10 @@ snapshots:
       nanoid: 3.3.8
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  preact-router@4.1.2(preact@10.25.3):
+    dependencies:
+      preact: 10.25.3
 
   preact@10.25.3: {}
 
